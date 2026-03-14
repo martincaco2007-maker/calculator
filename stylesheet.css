@@ -1,0 +1,64 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.result {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 141px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.numbers,
+.operations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.numbers {
+    width: 100px;
+}
+
+.operations {
+    width: 40px;
+}
+
+.buttons .operations button {
+    background-color: rgb(211, 211, 43);
+    width: 40px;
+}
+
+.numbers button,
+.operations button{
+    display: flex;
+    font-size: 30px;
+    margin: 1px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    aspect-ratio:calc(1/1);
+    border-radius: 5px;
+}
+
+.numbers .backspace {
+    font-size: 20px;
+}
+
+.numbers button.clear {
+    height: 30px;
+    width: 70px;
+    font-size: 20px;
+
+}
